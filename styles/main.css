@@ -5,7 +5,12 @@
 }
 
 h1{
-    background-color: aquamarine;
+    background-color: #153448;
     text-align: left;
     font-variant: small-caps;
+}
+
+body {
+    color: black;
+    background-color: #3C5B6F;
 }
