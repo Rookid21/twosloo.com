@@ -1,0 +1,11 @@
+*[class="nav"] {
+  text-align: center;
+  color: aqua;
+  size: 20px;
+}
+
+h1{
+    background-color: aquamarine;
+    text-align: left;
+    font-variant: small-caps;
+}
