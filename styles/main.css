@@ -1,39 +1,109 @@
-*[class="nav"] {
-  text-align: center;
-  color: aqua;
-  size: 20px;
-}
-
-h1{
-    background-color: #153448;
-    text-align: start;
-    font-variant: small-caps;
-    font-weight: 800;
-    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
-}
-
+/* General Styles */
 body {
-    color: black;
-    background-color: #3C5B6F;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
-teachers-test {
-  font-family: "Teachers", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+header {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-bottom: 4px solid purple; /* Purple border at the bottom of the header */
+}
+
+header .logo {
+  flex: 0 1 auto; /* Allows logo to take up only necessary space */
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header nav {
+  flex: 1; /* Allows nav to take up remaining space */
+  display: flex;
+  justify-content: center; /* Centers the nav items horizontally */
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 10px;
+  position: relative; /* Allows pseudo-elements to be used */
+}
+
+header nav ul li:not(:first-child)::before {
+  content: '|'; /* Adds the pipe symbol before each item except the first one */
+  margin-right: 20px;
+  color: purple; /* Pipe symbol color */
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: purple; /* Changed link color on hover to purple */
+}
+
+header .login {
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .login:hover {
+  background-color: purple; /* Purple color on hover */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
 #button1 {
-  height: 300px;
-  width: 200px;
-  padding: 5px 5px 50px;
-  margin: 0px 100px;
-  border: 5px solid #153448;
+  text-align: center;
 }
 
-#newroman{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-  color: darkcyan;
+#button1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#newroman {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: purple; /* Changed text color to purple */
+}
+
+footer {
+  background-color: #222;
+  color: white;
   text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
